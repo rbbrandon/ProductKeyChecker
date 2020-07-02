@@ -4,40 +4,58 @@ This utility is designed to read a Windows 8-10 product key, either via user inp
 ## Command-Line Examples
 Display the utility's "help menu":
 
-```ProductKeyChecker.exe /?```
+```
+ProductKeyChecker.exe /?
+```
 OR
-```ProductKeyChecker.exe /h```
+```
+ProductKeyChecker.exe /h
+```
 OR
-```ProductKeyChecker.exe /help```
+```
+ProductKeyChecker.exe /help
+```
 
 Use the embedded Windows OEM key:
-
-```ProductKeyChecker.exe /oem```
+```
+ProductKeyChecker.exe /oem
+```
 
 Use a specified Windows key:
-
-```ProductKeyChecker.exe /key YTMG3-N6DKC-DKB77-7M9GH-8HVX7```
+```
+ProductKeyChecker.exe /key YTMG3-N6DKC-DKB77-7M9GH-8HVX7
+```
 
 ## Example Output
 ### Windows 8.1 Pro OEM Key (embedded):
 ProductKeyChecker.exe /oem
-```Win 8.1 RTM Professional OEM:DM```
+```
+Win 8.1 RTM Professional OEM:DM
+```
 
 ### Windows 10 Home Generic Key:
 ProductKeyChecker.exe /key YTMG3-N6DKC-DKB77-7M9GH-8HVX7
-```Win 10 RTM Core Retail```
+```
+Win 10 RTM Core Retail
+```
 
 ### Windows 10 Pro Generic Key:
 ProductKeyChecker.exe /key VK7JG-NPHTM-C97JM-9MPGT-3V66T
-```Win 10 RTM Professional Retail```
+```
+Win 10 RTM Professional Retail
+```
 
 ### Windows 10 Education Generic Key:
 ProductKeyChecker.exe /key YNMGQ-8RYV3-4PGQ3-C8XTP-7CFBY
-```Win 10 RTM Education Retail```
+```
+Win 10 RTM Education Retail
+```
 
 ### Windows 10 Pro Education Generic Key:
 ProductKeyChecker.exe /key 8PTT6-RNW4C-6V7J2-C2D3X-MHBPB
-```Win 10 RTM ProfessionalEducation Retail```
+```
+Win 10 RTM ProfessionalEducation Retail
+```
 
 ## Credits
 * Leo Walthert for providing [PowerShell code to read an embeded Windows product key from the system firmware](https://gist.github.com/lwalthert/fe52f7fa98b4ea491345a0518750baa9).
