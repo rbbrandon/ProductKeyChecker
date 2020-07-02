@@ -61,6 +61,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="README.md" />
+    <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\verification.ico" />
