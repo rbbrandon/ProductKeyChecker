@@ -30,6 +30,8 @@ namespace ProductKeyChecker
                         Console.WriteLine("  /KEY        Use specified product key.");
                         Console.WriteLine("  productKey  Specifies product key to use.");
                         Console.WriteLine();
+                        Console.WriteLine("Icon made by Freepik from www.flaticon.com");
+                        Console.WriteLine();
                         return;
                     case "/OEM":
                         // Get MSDM Table Key (UEFI OEM Key):
