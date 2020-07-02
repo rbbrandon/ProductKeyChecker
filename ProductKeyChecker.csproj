@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="ACPIUtils.cs" />
     <Compile Include="DigitalProductId4.cs" />
+    <Compile Include="EfiAcpiMsdm.cs" />
+    <Compile Include="EfiAcpiSdtHeader.cs" />
     <Compile Include="ProductKey.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="NativeMethods.cs" />

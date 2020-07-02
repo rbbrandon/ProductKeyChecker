@@ -84,8 +84,9 @@ namespace ProductKeyChecker
                     Marshal.Copy(structPtr, buffer, 0, iStructSize);
                     Marshal.FreeHGlobal(structPtr);
 
-                    // Extract the OEM key out of the MSDM table (29 characters long, starting from the 56th character):
-                    key = Encoding.GetEncoding(Constants.WINDOWS_1252)?.GetString(buffer, 56, 29);
+                    // Extract the OEM key out of the MSDM table:
+                    var msdm = new EfiAcpiMsdm(buffer);
+                    key = msdm.ProductKey;
                 }
             }
 
