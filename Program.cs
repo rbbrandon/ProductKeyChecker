@@ -49,14 +49,22 @@ namespace ProductKeyChecker
             if (key == string.Empty)
             {
                 // No key method was specified at command line, prompt for a key:
-                Console.WriteLine("Please enter in a Windows 8-10 product key to test, or leave blank to test the embedded product key.");
-                Console.Write("Product key: ");
+                Console.WriteLine("Please enter in a Windows 8-10 product key to test, or leave blank to test the embedded product key if available.");
+
+                // Get MSDM Table Key (UEFI OEM Key):
+                string oemKey = ACPIUtils.GetOEMKey();
+
+                if (oemKey == string.Empty)
+                    Console.Write("Enter product key to test : ");
+                else
+                    Console.Write("Enter product key to test [default: " + oemKey + "] : ");
+
                 key = Console.ReadLine();
 
                 if (key == string.Empty)
                 {
-                    // Get MSDM Table Key (UEFI OEM Key):
-                    key = ACPIUtils.GetOEMKey();
+                    // Use embedded key
+                    key = oemKey;
 
                     if (key == string.Empty)
                     {
